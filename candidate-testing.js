@@ -49,13 +49,12 @@ function askQuestion() {
     //let correctAnswers = 
    
     let candidateAnswers = [];
-
-    console.log(`\nCandidate name: ${candidateName}`);
-    for (let i = 0; i < questions.length; i++) {
+ 
+   for (let i = 0; i < questions.length; i++) {
       let userResponse = input.question(`${questions[i]} `);
       candidateAnswers.push(userResponse);
-    }
-    
+    } 
+    console.log(`\nCandidate name: ${candidateName}`);
     for (let i = 0; i < questions.length; i++) {
       console.log(`${i + 1}) ${questions[i]}`);
       console.log(`Your Answer: ${candidateAnswers[i]}`);
